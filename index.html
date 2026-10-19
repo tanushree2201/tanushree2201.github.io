@@ -5,78 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tanushree | Data Engineer & AI</title>
-  <style>
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1020;
-      color: #eef2ff;
-      line-height: 1.7;
-    }
-    a { color: #91aaff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { width: min(1000px, 90%); margin: auto; }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 22px 0;
-      border-bottom: 1px solid #293550;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-    .brand { font-weight: bold; font-size: 1.2rem; }
-    nav div { display: flex; gap: 18px; flex-wrap: wrap; }
-    .hero { padding: 75px 0; }
-    .eyebrow { color: #91aaff; font-weight: bold; }
-    h1 { font-size: clamp(2.5rem, 7vw, 4.5rem); line-height: 1.1; }
-    h2 { font-size: 2rem; }
-    .intro { color: #b4bfd9; max-width: 680px; font-size: 1.1rem; }
-    .button {
-      display: inline-block;
-      padding: 10px 16px;
-      margin: 12px 8px 0 0;
-      border-radius: 8px;
-      background: #91aaff;
-      color: #0b1020;
-      font-weight: bold;
-    }
-    section { padding: 28px 0; }
-    .muted { color: #b4bfd9; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: #141c30;
-      border: 1px solid #293550;
-      border-radius: 12px;
-      padding: 22px;
-    }
-    .tag {
-      display: inline-block;
-      border: 1px solid #354363;
-      border-radius: 20px;
-      padding: 3px 10px;
-      margin: 3px;
-      color: #cbd5f0;
-      font-size: .85rem;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 25px 0;
-      border-top: 1px solid #293550;
-      color: #b4bfd9;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <nav>
       <a class="brand" href="#">Tanushree.</a>
+      <button id="theme-toggle" type="button">☀️ Light mode</button>
       <div>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -146,8 +81,14 @@
         <p class="muted">
           I'm developing these projects step by step.
         </p>
+        <div class="filter-bar">
+  <button class="active" data-filter="all">All</button>
+  <button data-filter="sql">SQL</button>
+  <button data-filter="data-engineering">Data Engineering</button>
+  <button data-filter="ai">AI</button>
+</div>
         <div class="grid">
-          <div class="card">
+     <div class="card project-card" data-category="sql data-engineering">
             <h3>Retail Sales Data Pipeline</h3>
             <p class="muted">
               Planned: clean, validate and analyze retail sales data
