@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanushree | Data Engineer & AI</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #eef2ff;
+      line-height: 1.7;
+    }
+    a { color: #91aaff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1000px, 90%); margin: auto; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 0;
+      border-bottom: 1px solid #293550;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .brand { font-weight: bold; font-size: 1.2rem; }
+    nav div { display: flex; gap: 18px; flex-wrap: wrap; }
+    .hero { padding: 75px 0; }
+    .eyebrow { color: #91aaff; font-weight: bold; }
+    h1 { font-size: clamp(2.5rem, 7vw, 4.5rem); line-height: 1.1; }
+    h2 { font-size: 2rem; }
+    .intro { color: #b4bfd9; max-width: 680px; font-size: 1.1rem; }
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      margin: 12px 8px 0 0;
+      border-radius: 8px;
+      background: #91aaff;
+      color: #0b1020;
+      font-weight: bold;
+    }
+    section { padding: 28px 0; }
+    .muted { color: #b4bfd9; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #141c30;
+      border: 1px solid #293550;
+      border-radius: 12px;
+      padding: 22px;
+    }
+    .tag {
+      display: inline-block;
+      border: 1px solid #354363;
+      border-radius: 20px;
+      padding: 3px 10px;
+      margin: 3px;
+      color: #cbd5f0;
+      font-size: .85rem;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 25px 0;
+      border-top: 1px solid #293550;
+      color: #b4bfd9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#">Tanushree.</a>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">DATA ENGINEERING · AI</div>
+        <h1>Hi, I'm Tanushree.<br>I build with data.</h1>
+        <p class="intro">
+          I'm building practical projects in data pipelines, cloud data
+          engineering, analytics, and AI-powered solutions.
+          Follow my journey as I turn raw data into useful insights.
+        </p>
+        <a class="button" href="#projects">Explore my projects</a>
+        <a class="button" href="https://github.com/tanushree2201">
+          Visit my GitHub
+        </a>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p class="muted">
+          My focus is on creating reliable data workflows, transforming
+          raw data into useful insights, and exploring how AI can make
+          data more valuable.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <p class="muted">Technologies I'm learning and practicing.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Programming & SQL</h3>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Data Modeling</span>
+          </div>
+          <div class="card">
+            <h3>Data Engineering</h3>
+            <span class="tag">ETL / ELT</span>
+            <span class="tag">Data Quality</span>
+            <span class="tag">Data Pipelines</span>
+          </div>
+          <div class="card">
+            <h3>Cloud & Big Data</h3>
+            <span class="tag">Azure</span>
+            <span class="tag">Azure Data Factory</span>
+            <span class="tag">Databricks</span>
+            <span class="tag">PySpark</span>
+          </div>
+          <div class="card">
+            <h3>AI</h3>
+            <span class="tag">LLMs</span>
+            <span class="tag">RAG</span>
+            <span class="tag">LangChain</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <p class="muted">
+          I'm developing these projects step by step.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>Retail Sales Data Pipeline</h3>
+            <p class="muted">
+              Planned: clean, validate and analyze retail sales data
+              using Python and SQL.
+            </p>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <p><strong>In progress</strong></p>
+          </div>
+          <div class="card">
+            <h3>Azure Data Pipeline</h3>
+            <p class="muted">
+              Planned: orchestrate data ingestion and transformation
+              using Azure services.
+            </p>
+            <span class="tag">Azure</span>
+            <span class="tag">ADF</span>
+            <p><strong>Planned</strong></p>
+          </div>
+          <div class="card">
+            <h3>AI-Powered Data Analysis</h3>
+            <p class="muted">
+              Planned: explore AI-assisted analysis of structured sales data.
+            </p>
+            <span class="tag">Python</span>
+            <span class="tag">AI</span>
+            <p><strong>Planned</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Let's Connect</h2>
+        <p class="muted">
+          Interested in data engineering, analytics and AI?
+          Explore my work on GitHub.
+        </p>
+        <a class="button" href="https://github.com/tanushree2201">
+          GitHub Profile
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built by Tanushree | Data Engineering & AI Portfolio</p>
+    </footer>
+  </div>
+</body>
+</html>
