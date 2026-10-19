@@ -1,0 +1,135 @@
+
+:root {
+  --bg: #0b1020;
+  --panel: #141c30;
+  --text: #eef2ff;
+  --muted: #b4bfd9;
+  --accent: #91aaff;
+  --border: #293550;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: min(1050px, 90%);
+  margin: auto;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+nav .links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.hero {
+  padding: 75px 0;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.12;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+button, .button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 9px;
+  padding: 11px 16px;
+  background: var(--accent);
+  color: #0b1020;
+  font-weight: bold;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.filter-bar button.active {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.card[hidden] {
+  display: none;
+}
+
+section {
+  padding: 30px 0;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 25px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+body.light-theme {
+  --bg: #f5f7fc;
+  --panel: #ffffff;
+  --text: #18233b;
+  --muted: #526079;
+  --accent: #315bd6;
+  --border: #dce2ef;
+}
+
+body.light-theme button,
+body.light-theme .button {
+  color: #ffffff;
+  background: #315bd6;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 45px 0;
+  }
+}
